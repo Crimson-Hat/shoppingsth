@@ -1,0 +1,91 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 30px 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+.container .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .row .col-12 .col-img img {
+  width: 50%;
+}
+
+.container .row .col-12 h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.container .row .col-12 .descriptive_text {
+  margin: 10px 0 20px;
+}
+.container .row .col-12 .descriptive_text p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.container .row .col-13 .button button {
+  background: #3a70ff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+.container .row .col-13 .button button i {
+  margin-right: 10px;
+}
+#error {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  padding: 20px 20px;
+  /* error background */
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#error.error {
+  background: #f44336;
+  animation: slide 0.3s ease-in-out;
+}
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 50px;
+  }
+}
+#error.success {
+  background: #36ae7c;
+  animation: slide 0.3s ease-in-out;
+}
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 50px;
+  }
+}
+.container.loggedIn {
+  display: none;
+}
